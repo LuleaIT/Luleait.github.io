@@ -99,8 +99,8 @@ a:last-of-type > div {
 
   color: white;
   font-size: 25px; 
-  font-family: "Roboto Thin";
-  font-weight: 900;
+  font-family: "Roboto";
+  font-weight: 300;
 }
 
 .ripple{
