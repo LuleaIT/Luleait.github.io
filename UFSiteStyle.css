@@ -1,0 +1,385 @@
+progress::-webkit-progress-bar { background: #ccc; }
+progress::-webkit-progress-value { background: #66306C; }
+::-webkit-scrollbar { display: none; }
+
+
+body {
+  font-family: Roboto, sans-serif;
+  color: rgba(0,0,0,0.87);
+  margin: 0px;
+
+  background-color: #FAFAFA;
+  text-rendering: optimizeLegibility;
+}
+
+#colorBar {
+  width: 100%;
+}
+
+.logo {
+	float: right;
+	height: 90px;
+	padding: 5px 10px 10px 10px;
+}
+
+.logoContainer > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -40px;
+}
+
+/*Navigation Pane stuff*/
+
+h2 {
+  padding: 15px 0px 0px 100px;
+  margin-top: 0px;
+
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+a > div > p {
+  font-color: black;
+  position: absolute;
+  margin: 0px;
+  top: 35px;
+  left: 100px;
+}
+
+#navigationPane {
+  /*position: fixed;*/
+  width: 300px;
+  height: 300px;
+  margin-top: 0px;
+  padding: 5px 0px 7px 0px;
+  position: relative;
+  float: left;
+}
+
+a:last-of-type > div {
+  margin-bottom: 700px; 
+}
+
+.navItem {
+  height: 70px;
+  /*margin: 0px 5px 0px 5px;*/
+  background-color: rgba(0,0,0,0);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+}
+.navItem:hover {
+  transition: 0.1s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #FAFAFA;
+}
+.navItem:active {
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: #FAFAFA;
+}
+.active.navItem {
+  background-color: #FAFAFA !important;
+}
+.icon2 {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  border-radius: 100%; 
+  float: left; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: gray;
+  left: 25px;
+  top: 10px;
+
+  color: white;
+  font-size: 25px; 
+  font-family: "Roboto Thin";
+  font-weight: 900;
+}
+
+.ripple{
+  overflow: hidden;
+}
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.26);
+
+  animation: ripple-animation 2s;
+}
+@keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}
+
+/*Contact info*/
+
+#contact {
+  width: 240px;
+  padding: 10px 30px 10px 30px;
+  color: white;
+}
+
+/*Card stuff*/
+
+
+#main {
+  min-height: 950px;
+  width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 0px;
+  margin-bottom: 100px;
+
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
+
+  overflow: auto;
+}
+
+#contentPane {
+  float: left;
+  width: 900px;
+  position: relative;
+  right: 0px;
+  margin-bottom: -100px;
+
+  /*overflow: auto;*/
+}
+
+.Container {
+  width: 900px;
+  padding-bottom: 100px;
+}
+
+.Content {
+  padding: 16px 32px 16px 32px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+
+/*Content*/
+
+.paraContainer {
+  margin-top: 30px;
+  background-color: rgba(0,0,0,0.06);
+  height: 255px;
+
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.imgContainer {
+  width: 300px;
+  float: left;
+}
+
+.imgContainer > p:first-of-type {
+  padding: 30px 0px 0px 30px;
+  margin: 0px;
+  font-size: 1.4em;
+}
+
+.imgContainer > p:nth-of-type(2) {
+  text-align: center;
+}
+
+.imgContainer > img {
+  margin: 30px 30px 10px 30px;
+  width: 80%;
+  background-repeat: no-repeat; 
+  float: left;
+}
+
+.paraContainer > p {
+  float: left;
+  margin-top: 70px;
+  width: 450px;
+}
+
+
+/*Image stuff*/
+/*
+
+.scrim {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 50px;
+
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+}
+
+.imgContainer {
+  height: 200px;
+  overflow: hidden;
+}
+
+
+.icon {
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  border-radius: 100%; 
+  float: left; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: gray;
+  left: 1000px;
+  top: -75px;
+  z-index: 1;
+
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.icon:hover{
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.iconText {
+  color: white;
+  font-size: 80px; 
+  font-family: "Roboto Thin"
+}
+
+.material-icons {
+  color: white;
+  font-size: 36px !important;
+}
+*/  
+/*Text stuff*/
+
+.shortcutText {
+  display: inline-block; 
+  width: 138px;
+  vertical-align: top;
+}
+
+p {
+  line-height: 24px;
+}
+
+h1 {
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+
+  font-weight: 300;
+}
+
+h3 {
+  color: white;
+  position: absolute;
+  top: -120px;
+  left: 90px;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+#title {
+  left: 120px;
+  top: 115px;
+  position: fixed;
+  /*color: white;*/
+  font-size: 40px;
+}
+
+h4 {
+  margin: 0px;
+  padding-top: 4px;
+  padding-bottom: 0px;
+
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(0,0,0,0.54);
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .02em;
+  margin: 24px 0px 0px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: .04em;
+  margin: 24px 0 16px;
+}
+
+hr {
+  border-style: outset;
+  margin-top: 50px;
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.87);
+}
+
+.textBlock {
+  padding: 30px 60px 0px 60px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.textBlock > p {
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.textBlock > div > div:nth-child(1) {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.textBlock > div > div:nth-child(2) {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 30px;
+  margin-top: 20px;
+  color: #616161;
+  width: 85px;
+}
+
+.textBlock > div > div:nth-child(3)  {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-top: 20px;
+  width: 275px;
+}
+
+.textBlock > div > div:nth-child(3) > P {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
