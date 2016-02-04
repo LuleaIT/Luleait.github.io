@@ -1,7 +1,8 @@
 progress::-webkit-progress-bar { background: #ccc; }
 progress::-webkit-progress-value { background: #66306C; }
 ::-webkit-scrollbar { display: none; }
-
+// If the width is under 1200 pixels, make contentpane 100% and hide navigationpane.
+// Make all tabs 100% to begin with
 
 body {
   font-family: Roboto, sans-serif;
