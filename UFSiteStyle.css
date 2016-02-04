@@ -15,53 +15,53 @@ body {
 
 @media (max-width:1200px) {
 
-  #contentPane, #main { 
-    width: 100% !important;
-  }
+    #contentPane, #main { 
+        width: 100% !important;
+    }
 
-  #navigationPane {
+    #navigationPane {
     /*display: none;*/
-    position: absolute !important; 
-    left: -300px;
+        position: absolute !important; 
+        left: -300px;
     /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/ 
-  }
+    }
 
-  h3 {
-    left: 360px !important;
-  }
+    h3 {
+        left: 360px !important;
+    }
 
-  #contact {
-      margin-left: 70px;
-  }
+    #contact {
+        margin-left: 70px;
+    }
 
 
 
-  #nav-trigger {
-    display: inline-block !important;
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-  }
+    #nav-trigger {
+        display: inline-block !important;
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
 
-  label[for="nav-trigger"] {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    z-index: 2;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background-image: url("http://s16.postimg.org/cozquzm2t/white_Nav.png");
-    background-size: contain;
-  }
+    label[for="nav-trigger"] {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-image: url("http://s16.postimg.org/cozquzm2t/white_Nav.png");
+        background-size: contain;
+    }
 
-  #nav-trigger:checked ~ #main > #navigationPane, #nav-trigger:checked ~ #main {
-    transition: margin 0.2s;
-    margin-left: 300px;
-  }
+    #nav-trigger:checked ~ #main > #navigationPane {
+        transition: margin 0.2s;
+        margin-left: 300px;
+    }
 
-  #nav-trigger:checked ~ label {
-    background-image: url("http://i.stack.imgur.com/Fw96Z.png");
-  }
+    #nav-trigger:checked ~ label {
+        background-image: url("http://i.stack.imgur.com/Fw96Z.png");
+    }
 }
 
 #nav-trigger {
@@ -245,7 +245,7 @@ a:last-of-type > div {
 }
 
 .imgContainer {
-  width: 300px;
+  width: 40%;
   float: left;
 }
 
@@ -269,68 +269,14 @@ a:last-of-type > div {
 .paraContainer > p {
   float: left;
   margin-top: 70px;
-  width: 450px;
+  width: 55%;
 }
 
-
-/*Image stuff*/
-/*
-
-.scrim {
-  width: 100%;
-  height: 150px;
-  position: absolute;
-  top: 50px;
-
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
-}
-
-.imgContainer {
-  height: 200px;
-  overflow: hidden;
-}
-
-
-.icon {
-  width: 150px;
-  height: 150px;
-
-  position: absolute;
-  border-radius: 100%; 
-  float: left; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  background-color: gray;
-  left: 1000px;
-  top: -75px;
-  z-index: 1;
-
-  transition: 0.3s;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.icon:hover{
-  transition: 0.3s;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.iconText {
-  color: white;
-  font-size: 80px; 
-  font-family: "Roboto Thin"
-}
-
-.material-icons {
-  color: white;
-  font-size: 36px !important;
-}
-*/  
 /*Text stuff*/
 
 .shortcutText {
   display: inline-block; 
-  width: 138px;
+  width: 40%;
   vertical-align: top;
 }
 
@@ -433,7 +379,7 @@ a {
   vertical-align: top;
   padding-left: 20px;
   margin-top: 20px;
-  width: 275px;
+  width: 30%;
 }
 
 .textBlock > div > div:nth-child(3) > P {
