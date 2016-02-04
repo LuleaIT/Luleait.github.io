@@ -54,7 +54,7 @@ body {
   }
 
   #nav-trigger:checked ~ #main > #navigationPane, #nav-trigger:checked ~ #main {
-    transition: margin 0.2s;
+    /*transition: margin 0.2s;*/
     margin-left: 300px;
   }
 
