@@ -1,8 +1,7 @@
 progress::-webkit-progress-bar { background: #ccc; }
 progress::-webkit-progress-value { background: #66306C; }
 ::-webkit-scrollbar { display: none; }
-// If the width is under 1200 pixels, make contentpane 100% and hide navigationpane.
-// Make all tabs 100% to begin with
+/*Toggleable sidebar!*/
 
 body {
   font-family: Roboto, sans-serif;
@@ -11,6 +10,20 @@ body {
 
   background-color: #FAFAFA;
   text-rendering: optimizeLegibility;
+}
+
+@media (max-width:1200px) {
+  #contentPane, #main { 
+    width: 100% !important;
+  }
+  #navigationPane {
+    /*display: none;*/
+    position: absolute !important; 
+    left: -300px;
+  }
+  h3 {
+    left: 280px !important;
+  }
 }
 
 #colorBar {
@@ -164,7 +177,7 @@ a:last-of-type > div {
 }
 
 .Container {
-  width: 900px;
+  width: 100%;
   padding-bottom: 100px;
 }
 
@@ -382,3 +395,5 @@ a {
   margin-top: 0px;
   margin-bottom: 5px;
 }
+
+
