@@ -2,6 +2,7 @@ progress::-webkit-progress-bar { background: #ccc; }
 progress::-webkit-progress-value { background: #66306C; }
 ::-webkit-scrollbar { display: none; }
 /*Toggleable sidebar!*/
+/*First page is the problem!!*/
 
 body {
   font-family: Roboto, sans-serif;
@@ -54,7 +55,7 @@ body {
         background-size: contain;
     }
 
-    #nav-trigger:checked ~ #main > #navigationPane {
+    #nav-trigger:checked ~ #main > #navigationPane, #nav-trigger:checked ~ #main {
         transition: margin 0.2s;
         margin-left: 300px;
     }
